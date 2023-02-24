@@ -1,0 +1,209 @@
+/* Show it is fixed to the top */
+/* Show it is fixed to the top */
+/* Show it is fixed to the top */
+.fixture-main {
+  min-height: 75rem;
+  padding-top: 4.5rem;
+  background-repeat: repeat-x;
+  background-size: 100%;
+  min-height: 700px;
+}
+.user {
+  color: white;
+  float: right;
+}
+.user a {
+  color: white;
+  text-decoration: none;
+}
+.flag img {
+  width: 50px;
+  border-radius: 15px;
+  margin-right: 10px;
+}
+.flag {
+  font-weight: 600;
+  font-size: 1.5rem;
+  font-family: Hind Siliguri, Arial, Helvetica Neue, Helvetica, sans-serif;
+  color: white;
+}
+.verses {
+  width: 50px !important;
+  text-align: center;
+  font-weight: 600;
+  margin-right: 50px;
+  color: white;
+}
+
+.table a {
+  color: white;
+  text-decoration: none;
+}
+.booking-container {
+  width: 300px;
+  border-radius: 3px;
+  background-color: white;
+  background-image: none;
+  margin-top: 100px;
+  margin-left: 100px;
+  float: left;
+}
+.booking-button button {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.booking-select select {
+  height: 60px;
+}
+.col-md-6 {
+  color: white;
+  float: left;
+  margin-top: 133px;
+  margin-left: 50px;
+}
+.card-text {
+  color: white;
+}
+h5 {
+  padding-top: 15px !important;
+}
+ {
+  min-height: 75rem;
+  padding-top: 4.5rem;
+  background-repeat: repeat-x;
+  background-size: 100%;
+  min-height: 700px;
+}
+.user {
+  color: white;
+  float: right;
+}
+.user a {
+  color: white;
+  text-decoration: none;
+}
+. img {
+  width: 100%;
+  height: 100vh;
+  border-radius: 15px;
+  margin-right: 10px;
+}
+.flag {
+  font-weight: 600;
+  font-size: 1.5rem;
+  font-family: Hind Siliguri, Arial, Helvetica Neue, Helvetica, sans-serif;
+  color: white;
+}
+.verses {
+  width: 50px !important;
+  text-align: center;
+  font-weight: 600;
+  margin-right: 50px;
+  color: white;
+}
+
+.table a {
+  color: white;
+  text-decoration: none;
+}
+.booking-container {
+  width: 300px;
+  border-radius: 3px;
+  background-color: white;
+  background-image: none;
+  margin-top: 100px;
+  margin-left: 100px;
+  float: left;
+}
+.booking-button button {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.booking-select select {
+  height: 60px;
+}
+.col-md-6 {
+  color: white;
+  float: left;
+  margin-top: 133px;
+  margin-left: 50px;
+}
+.card-text {
+  color: white;
+}
+h5 {
+  padding-top: 15px !important;
+}
+ {
+  min-height: 75rem;
+  padding-top: 4.5rem;
+  background-repeat: repeat-x;
+  background-size: 100%;
+  min-height: 700px;
+}
+.user {
+  color: white;
+  float: right;
+}
+.user a {
+  color: white;
+  text-decoration: none;
+}
+.img {
+  width: 50px;
+  border-radius: 15px;
+  margin-right: 10px;
+}
+.flag {
+  font-weight: 600;
+  font-size: 1.5rem;
+  font-family: Hind Siliguri, Arial, Helvetica Neue, Helvetica, sans-serif;
+  color: white;
+}
+.verses {
+  width: 50px !important;
+  text-align: center;
+  font-weight: 600;
+  margin-right: 50px;
+  color: white;
+}
+
+.table a {
+  color: white;
+  text-decoration: none;
+}
+.booking-container {
+  width: 300px;
+  border-radius: 3px;
+  background-color: white;
+  background-image: none;
+  margin-top: 100px;
+  margin-left: 100px;
+  float: left;
+}
+.booking-button button {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.booking-select select {
+  height: 60px;
+}
+.col-md-6 {
+  color: white;
+  float: left;
+  margin-top: 133px;
+  margin-left: 50px;
+}
+.card-text {
+  color: orangered;
+}
+h5 {
+  padding-top: 15px !important;
+}
+
+/* .custom_bg {
+  background-image: url("D:\priya-Logiprompt\PRIYA-pro\myp\public\img\A1.jpg");
+  /* background: #000; */
+/* width: 100%;
+  height: 100vh;
+} */

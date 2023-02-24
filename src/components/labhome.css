@@ -1,0 +1,4 @@
+.home-slides .carousel-item img {
+  height: 90vh;
+  object-fit: cover;
+}

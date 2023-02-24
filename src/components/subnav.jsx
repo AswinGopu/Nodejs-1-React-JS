@@ -1,0 +1,113 @@
+import React, { useState } from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { useNavigate } from "react-router-dom";
+
+export default function Subnav() {
+  const [email, setEmail] = useState("");
+  const navigate = useNavigate();
+  const [password, setPassword] = useState("");
+  let usertype;
+
+  const onlogin = () => {
+    let param = {
+      email: email,
+      password: password,
+      usertype: usertype,
+    };
+    console.log(param);
+    fetch("http://localhost/covid/public/api/login", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        accept: "application/json",
+      },
+      body: JSON.stringify(param),
+    }).then((data) => {
+      data.json().then((res) => {
+        localStorage.setItem("userdata", res[0]);
+        // let info = localStorage.getItem('userdata')
+        // localStorage.clear()
+        if (res[0] != null) {
+          navigate("/labhome");
+        }
+      });
+    });
+  };
+  return (
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          COVID 19
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/home">
+                HOME
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/about">
+                ABOUT
+              </a>
+            </li>
+          </ul>
+
+          <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDarkDropdownMenuLink"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  USERS
+                </a>
+                <ul
+                  class="dropdown-menu dropdown-menu-dark"
+                  aria-labelledby="navbarDarkDropdownMenuLink"
+                >
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      PUBLIC
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      LAB
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      HOSPITAL
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <span class="navbar-text">
+            <a class="navbar-brand" href="/login">
+              LOGIN
+            </a>
+          </span>
+        </div>
+      </div>
+    </nav>
+  );
+}
